@@ -10,17 +10,17 @@ Quand vous lancez Visual Studio Code il faut que vous choisissiez le type de ter
 Press CTRL-SHIFT-P and a selection box should appear at the top of the editor. Type in default shell and click on the Terminal: Select Default Shell option.
 Si jamais ça marche pas vous me demandez
 
-Ensuite faut taper git init pour initialiser le répertoire avec git, puis taper
-git clone https://github.com/RemiEC/PING.git
-git remote add upstream https://github.com/RemiEC/PING.git
-git remote -v
+Ensuite faut taper "git init" pour initialiser le répertoire avec git, puis taper
+"git clone https://github.com/RemiEC/PING.git"
+"git remote add upstream https://github.com/RemiEC/PING.git"
+"git remote -v"
 
 La normalement vous devriez avoir des trucs qui s'affichent
 Puis vous tapez :
 
-git fetch upstream
-git checkout master
-git merge upstream/master
+"git fetch upstream"
+"git checkout master"
+"git merge upstream/master" (celle ci peut ne pas marcher, dites moi si c'est le cas et j'update le tuto)
 
 Là vous devriez avoir un répertoire fonctionnnel
 
