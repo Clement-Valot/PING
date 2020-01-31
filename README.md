@@ -26,4 +26,4 @@ Là vous devriez avoir un répertoire fonctionnnel
 
 Quand vous voudrez bosser avant de changer quoique ce soit faudra git pull upstream master
 Ensuite vous écrivez vos bails
-Ensuite vous irez sur l'onglet que je vous indiquerai et vous commitez les changes, puis vous faites push pour les envoyer sur le github
+Ensuite vous idddrez sur l'onglet que je vous indiquerai et vous commitez les changes, puis vous faites push pour les envoyer sur le github
