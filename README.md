@@ -31,7 +31,7 @@ Par la suite on créera sans doute plusieurs branches pour le développement de 
 
 
 # Utilisation normale
-
+#exemple
 
 En temps normal quand vous travaillerez il faudra tester les modifications sur votre ordi puis quand vous voulez les envoyer il faut utiliser les commandes suivantes : 
 "git add -A -- . " qui va stage tous les changements que vous avez apportés (addition, deletion, modification)
