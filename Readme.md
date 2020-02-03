@@ -1,7 +1,7 @@
 # PING
 Projet Ping Campus Connecté
 
-
+test
 ## GitHub
 
 ### Initialisation
