@@ -83,14 +83,18 @@ void loop() {
   //Initialisation LoRa
 
   Serial.println("Sending packet: ");
-  String texte = "distance 1 :" + distance1 ;
-  String texte2 =  " distance 2 : " + distance2;
-  String texte3 =  " distance 3 : " + distance3;
-  Serial.print(texte + texte2 + texte3);
+  String texte = "distance 1 :";
+  String texte2 =  " distance 2 : ";
+  String texte3 =  " distance 3 : ";
+  Serial.print(texte); Serial.println(distance1);
+  Serial.print(texte2); Serial.println(distance2);
+  Serial.print(texte3); Serial.println(distance3);
   //Send LoRa packet to receiver
   LoRa.beginPacket();
   LoRa.println("Packet number " + counter);
-  LoRa.print(texte + texte2 + texte3);
+  LoRa.print(texte); LoRa.println(distance1);
+  LoRa.print(texte2); LoRa.println(distance2);
+  LoRa.print(texte3); LoRa.println(distance3);
   LoRa.endPacket();
   
   counter ++;
