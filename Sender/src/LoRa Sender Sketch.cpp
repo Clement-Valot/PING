@@ -65,7 +65,8 @@ void setup() {
 
 double CalculDistance (double tension)
 {
-  double result = -30.907*pow(tension,6.0) + 303.24*pow(tension,5.0) -1166.5*pow(tension,4.0) + 2202.3*pow(tension,3.0) - 2049.8*pow(tension,2.0) + 744.65*tension + 59.832
+  double result = -30.907*pow(tension,6.0) + 303.24*pow(tension,5.0) -1166.5*pow(tension,4.0) + 2202.3*pow(tension,3.0) - 2049.8*pow(tension,2.0) + 744.65*tension + 59.832;
+  return result;
 }
 void loop() {
 
