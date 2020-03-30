@@ -7,9 +7,21 @@
 
 Pour que ça fonctionne faut que vous créiez un répertoire local ni sur OneDrive ni avec un chemin contenant des caractères spéciaux.
 Ensuite vous installez Visual Studio Code (https://code.visualstudio.com/) + Git (https://git-scm.com/download/win).
-Quand vous lancez Visual Studio Code il faut que vous choisissiez le type de terminal en faisant : 
-Press CTRL-SHIFT-P and a selection box should appear at the top of the editor. Type in default shell and click on the Terminal: Select Default Shell option.
+Quand vous lancez Visual Studio Code il faut que vous choisissiez le type de terminal. 
+Tapez CTRL-SHIFT-P et une box devrait s'ouvrir en haut de votre éditeur. Tapez "Select Default Shell" et choisissez la shell bash
 Vous pourrez comme ça avoir le terminal git bash directement intégré dans VSC plutôt que devoir gérer deux fenêtres distinctes.
+
+////////////////////////////////
+SI BASH N'APPARAIT PAS DANS LES SHELLS PROPOSEES
+
+Ce problème survient sur plusieurs types de machine (notamment la mienne).
+Il faut alors aller dans les Settings (en passant par le rouage en bas à gauche) et scroll jusqu'à ce que vous trouviez un lien 'Edit in settings.json'. Cliquez dessus, ça vous ouvrira directement le fichier settings.json sans que vous ayez à le chercher dans votre machine
+Vous devriez avoir dans une des lignes du répertoire quelque chose de similaire à :
+"terminal.integrated.shell.windows": "C:\\Program Files (x86)\\Git\\bin\\bash.exe",
+
+Il s'agit du chemin qui permet au terminal de savoir quelle shell utiliser, vous devriez avoir un chemin différent qui ne mène pas à bash.
+Il faut donc que vous remplaciez le chemin d'exemple que j'ai indiqué par votre chemin vers bash.exe qui aura été installé en même temps que Git. Votre chemin devrait être similaire au mien donc je vous le laisse à titre d'exemple (attention à mettre des \\ ou des / dans le chemin sinon il ne sera pas reconnu)
+////////////////////////////////
 
 Ensuite faut taper les lignes suivantes : 
 
