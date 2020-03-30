@@ -53,32 +53,23 @@ Par la suite on créera sans doute plusieurs branches pour le développement de 
 
 
 # Utilisation normale
+Pour utiliser GitHub avec Visual Studio Code il vous suffit de quelques notions simples.
 
-EXEMPLE
 
-En temps normal quand vous travaillerez il faudra tester les modifications sur votre ordi puis quand vous voulez les envoyer il faut utiliser les commandes suivantes : 
-```
-git add -A -- . 
-```
-Va stage tous les changements que vous avez apportés (addition, deletion, modification)
-```
-git commit -m <votremessage>
-```
-Pour commit les changements que vous avez apporté au code
-```
-git push upstream master (ou juste "git push" parfois ça passe)
-```
-Pour envoyer vos modifications au git via le "flux" upstream sur la branche master
-  
-  Ces commandes doivent être effectuées à chaque fois que vous voulez envoyer vos changements sur le git. L'avantage d'utiliser Studio Code et Git comme je l'ai indiqué plus haut est que plutôt que d'avoir à taper toutes ces lignes à chaques fois on peut passer par l'interface graphique de VSC pour le faire en 2-3 clics
-  
-  De même avant de procéder à des changements il faudra toujours pull les modifications apportées par les autres au projet, pour ça il faut utiliser la commande :
-  ```
-  git pull upstream master (ou juste "git pull" parfois ça passe)
-  ```
- Pour recevoir via le "flux" upstream les changements apportés à la branche master (attention à être sur la bonne branche avec votre "git checkout", la branche sur laquelle vous êtes est indiquée en bas à gauche dans Studio Code pour vous aider)
-  
-  Encore une fois avoir le setup que j'ai conseillé facilite les choses, vous pourrez voir en bas à gauche combien de commit vous devez pull pour être à jour et combien de commit vous avez fait depuis votre dernier push. En cliquant sur le bouton d'actualisation vous pourrez pull puis push automatiquement.
+Quand vous modifiez un fichier track par GitHub, un petit 1 va apparaître sur la gauche de votre écran (c'est le source control)
+
+Les modifications sont envoyés à Git par paquet appelés 'commit', en général on veut envoyer plusieurs modifications d'un coup (des      lignes en plus sur un fichier, d'autres en moins sur un autre, etc)
+
+Pour ce faire allez dans l'onglet Source control et cliquez sur le '+' à côté des changements que vous voulez ajouter ('stage') au prochain commit (vous pouvez toujours revenir en arrière et en retirer un du commit).
+
+Vous devez ensuite indiquer un commit message (qui doit être un résumé bref des modifications qu'apporte ce commit) puis cliquer sur la checkmark au dessus pour confirmer le commit
+
+Si vous regardez en bas à gauche de votre écran vous devriez voir une sorte d'ouroboros, il indique le nombre de commit de retard que votre version du projet a ainsi que le nombre de commit d'avance que vous avez.
+
+En cliquant dessus, vous faites à la fois un 'pull' (récupérer le contenu des commits de retard) et un 'push' (envoyer vos propres commits).
+
+
+Vous avez maintenant des bases de GitHub suffisantes pour travailler en autonomie !
   
   
   # ATTENTION
